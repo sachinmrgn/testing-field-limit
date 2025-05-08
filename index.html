@@ -38,9 +38,25 @@ chat='true'>
       </div>
       
       <button data-element="submit" class="formkit-submit formkit-submit" style="color:#fff; background-color:#c0000b; border-radius:5px; font-weight:700;">Submit</button>
+
+    </br></br></br></br>
+            <button data-element="CV" class="formkit-submit formkit-submit" onclick="myFunction()">testing CE</button>
+
     </div>
   </div>
 </form>
+  <script>
+  function myFunction() {
+    FM.trackCustomEvent("Added to cart", 
+{
+"email": "david.thompson@sample.com", 
+"price": 100.21, 
+"currency": "USD", 
+"is_mobile_transaction": true, 
+"return date": "2019-12-30"
+});
+  }
+</script>
 
   <script src="script.js"></script>
 </body>
